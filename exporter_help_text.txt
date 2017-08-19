@@ -8,6 +8,7 @@ To use this script you can pass the following attributes:
    maxtweets: The maximum number of tweets to retrieve
    toptweets: Only the tweets provided as top tweets by Twitter (no parameters required)
       output: A filename to export the results (default is "output_got.csv")
+      language: The locale of the expected language (e.g. en)
 
 Examples:
 # Example 1 - Get tweets by username [barackobama]
