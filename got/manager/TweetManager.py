@@ -102,7 +102,8 @@ class TweetManager:
 			if tweetCriteria.topTweets:
 				url = "https://twitter.com/i/search/timeline?q=%s&src=typd&max_position=%s"
 		
-		
+		if hasattr(tweetCriteria, 'language'):
+			url += '&l=' + tweetCriteria.language
 		
 		url = url % (urllib.quote(urlGetData), refreshCursor)
 
